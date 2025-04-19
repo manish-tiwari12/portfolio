@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Manish Tiwari</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-gray-900/80 backdrop-blur-sm z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="text-2xl font-bold">MT</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="hover:text-blue-400 transition-colors">Home</a>
+                    <a href="about.html" class="hover:text-blue-400 transition-colors">About</a>
+                    <a href="skills.html" class="text-blue-400 hover:text-blue-300 transition-colors">Skills</a>
+                    <a href="projects.html" class="hover:text-blue-400 transition-colors">Projects</a>
+                    <a href="contact.html" class="hover:text-blue-400 transition-colors">Contact</a>
+                </div>
+                <button class="md:hidden" id="menu-btn">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Skills Section -->
+    <section class="pt-32 pb-20">
+        <div class="container mx-auto px-6">
+            <h1 class="text-4xl md:text-5xl font-bold mb-12 text-center opacity-0" id="skills-title">My Skills</h1>
+            
+            <!-- Web Development Skills -->
+            <div class="mb-20">
+                <h2 class="text-2xl font-bold mb-8 text-center opacity-0" id="web-title">Web Development</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+                    <div class="skill-card opacity-0">
+                        <i class="fab fa-html5 text-4xl text-orange-500"></i>
+                        <h3 class="mt-4">HTML5</h3>
+                        <div class="skill-level mt-2">
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-orange-500 h-2 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card opacity-0">
+                        <i class="fab fa-css3-alt text-4xl text-blue-500"></i>
+                        <h3 class="mt-4">CSS3</h3>
+                        <div class="skill-level mt-2">
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-blue-500 h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card opacity-0">
+                        <i class="fab fa-js text-4xl text-yellow-500"></i>
+                        <h3 class="mt-4">JavaScript</h3>
+                        <div class="skill-level mt-2">
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-yellow-500 h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card opacity-0">
+                        <i class="fas fa-mobile-alt text-4xl text-green-500"></i>
+                        <h3 class="mt-4">Responsive Design</h3>
+                        <div class="skill-level mt-2">
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-green-500 h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Python Development -->
+            <div class="mb-20">
+                <h2 class="text-2xl font-bold mb-8 text-center opacity-0" id="python-title">Python Development</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+                    <div class="skill-card opacity-0">
+                        <i class="fab fa-python text-4xl text-blue-400"></i>
+                        <h3 class="mt-4">Python</h3>
+                        <div class="skill-level mt-2">
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-blue-400 h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card opacity-0">
+                        <i class="fas fa-database text-4xl text-purple-500"></i>
+                        <h3 class="mt-4">SQL</h3>
+                        <div class="skill-level mt-2">
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-purple-500 h-2 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card opacity-0">
+                        <i class="fas fa-server text-4xl text-red-500"></i>
+                        <h3 class="mt-4">REST APIs</h3>
+                        <div class="skill-level mt-2">
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-red-500 h-2 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card opacity-0">
+                        <i class="fas fa-code text-4xl text-yellow-500"></i>
+                        <h3 class="mt-4">Automation</h3>
+                        <div class="skill-level mt-2">
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-yellow-500 h-2 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools & Others -->
+            <div>
+                <h2 class="text-2xl font-bold mb-8 text-center opacity-0" id="tools-title">Tools & Others</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+                    <div class="skill-card opacity-0">
+                        <i class="fab fa-git-alt text-4xl text-red-500"></i>
+                        <h3 class="mt-4">Git</h3>
+                        <div class="skill-level mt-2">
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-red-500 h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card opacity-0">
+                        <i class="fab fa-github text-4xl text-gray-400"></i>
+                        <h3 class="mt-4">GitHub</h3>
+                        <div class="skill-level mt-2">
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-gray-400 h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card opacity-0">
+                        <i class="fas fa-paint-brush text-4xl text-yellow-500"></i>
+                        <h3 class="mt-4">UI/UX Basics</h3>
+                        <div class="skill-level mt-2">
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-yellow-500 h-2 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card opacity-0">
+                        <i class="fas fa-tasks text-4xl text-blue-500"></i>
+                        <h3 class="mt-4">Project Management</h3>
+                        <div class="skill-level mt-2">
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-blue-500 h-2 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center md:text-left">
+                    <h3 class="text-xl font-bold mb-4">Manish Tiwari</h3>
+                    <p class="text-gray-400">Web & Python Developer</p>
+                </div>
+                <div class="text-center">
+                    <h3 class="text-xl font-bold mb-4">Connect</h3>
+                    <div class="flex justify-center space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-github"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="text-center md:text-right">
+                    <h3 class="text-xl font-bold mb-4">Contact</h3>
+                    <p class="text-gray-400"><i class="fas fa-envelope mr-2"></i>contact@manishtiwari.com</p>
+                    <p class="text-gray-400"><i class="fas fa-map-marker-alt mr-2"></i>Ratanpur, Bilaspur</p>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+                <p>&copy; 2025 Manish Tiwari. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 

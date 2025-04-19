@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Manish Tiwari</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-gray-900/80 backdrop-blur-sm z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="text-2xl font-bold">MT</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="hover:text-blue-400 transition-colors">Home</a>
+                    <a href="about.html" class="text-blue-400 hover:text-blue-300 transition-colors">About</a>
+                    <a href="skills.html" class="hover:text-blue-400 transition-colors">Skills</a>
+                    <a href="projects.html" class="hover:text-blue-400 transition-colors">Projects</a>
+                    <a href="contact.html" class="hover:text-blue-400 transition-colors">Contact</a>
+                </div>
+                <button class="md:hidden" id="menu-btn">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="pt-32 pb-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-4xl md:text-5xl font-bold mb-12 text-center opacity-0" id="about-title">About Me</h1>
+                
+                <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+                    <div class="opacity-0" id="about-image">
+                        <img src="images/profile.jpg" alt="Manish Tiwari" class="rounded-lg shadow-xl">
+                    </div>
+                    <div class="opacity-0" id="about-text">
+                        <h2 class="text-2xl font-bold mb-4">Who am I?</h2>
+                        <p class="text-gray-300 mb-6">
+                            I am a dedicated web and Python developer based in Ratanpur, Bilaspur. I love building interactive 
+                            and functional web applications. I am currently pursuing BCA and have a passion for learning and creating.
+                        </p>
+                        <p class="text-gray-300 mb-6">
+                            My journey in tech started with a curiosity for how things work on the internet, which led me 
+                            to learn coding and design. Today, I combine technical expertise with creative problem-solving 
+                            to deliver exceptional results.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="contact.html" class="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-lg transition-colors">Get In Touch</a>
+                            <a href="#" class="border border-blue-500 hover:bg-blue-500 px-6 py-3 rounded-lg transition-colors">Download CV</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Section -->
+                <h2 class="text-3xl font-bold mb-12 text-center opacity-0" id="timeline-title">Education & Experience</h2>
+                <div class="space-y-12">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item opacity-0">
+                        <div class="flex flex-col md:flex-row">
+                            <div class="md:w-1/3 mb-4 md:mb-0">
+                                <h3 class="text-xl font-bold text-blue-400">BCA</h3>
+                                <p class="text-gray-400">Computer Science</p>
+                                <p class="text-gray-500">2023 - Present</p>
+                            </div>
+                            <div class="md:w-2/3">
+                                <p class="text-gray-300">
+                                    Currently pursuing Bachelor of Computer Applications with focus on web development 
+                                    and software engineering.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item opacity-0">
+                        <div class="flex flex-col md:flex-row">
+                            <div class="md:w-1/3 mb-4 md:mb-0">
+                                <h3 class="text-xl font-bold text-blue-400">Web Development</h3>
+                                <p class="text-gray-400">Freelance</p>
+                                <p class="text-gray-500">2022 - Present</p>
+                            </div>
+                            <div class="md:w-2/3">
+                                <p class="text-gray-300">
+                                    Working on various web development projects, creating responsive and user-friendly 
+                                    websites using modern technologies.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item opacity-0">
+                        <div class="flex flex-col md:flex-row">
+                            <div class="md:w-1/3 mb-4 md:mb-0">
+                                <h3 class="text-xl font-bold text-blue-400">Python Development</h3>
+                                <p class="text-gray-400">Personal Projects</p>
+                                <p class="text-gray-500">2021 - Present</p>
+                            </div>
+                            <div class="md:w-2/3">
+                                <p class="text-gray-300">
+                                    Developing Python applications and scripts, focusing on automation and data analysis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center md:text-left">
+                    <h3 class="text-xl font-bold mb-4">Manish Tiwari</h3>
+                    <p class="text-gray-400">Web & Python Developer</p>
+                </div>
+                <div class="text-center">
+                    <h3 class="text-xl font-bold mb-4">Connect</h3>
+                    <div class="flex justify-center space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-github"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="text-center md:text-right">
+                    <h3 class="text-xl font-bold mb-4">Contact</h3>
+                    <p class="text-gray-400"><i class="fas fa-envelope mr-2"></i>contact@manishtiwari.com</p>
+                    <p class="text-gray-400"><i class="fas fa-map-marker-alt mr-2"></i>Ratanpur, Bilaspur</p>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+                <p>&copy; 2025 Manish Tiwari. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
